@@ -1,0 +1,82 @@
+html,
+body {
+	// no free Segoe UI found (
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.plan{
+	/* Plan */
+
+
+position: relative;
+width: 1440px;
+height: 800px;
+
+/* gray/dark */
+
+background: #EFF4F7;
+}
+
+// .left-sidebar{
+// 	width: 384px;
+// 	height: 100%;
+// }
+
+
+
+.container{
+	
+  max-width: 1056px;
+  width: 100%;
+  margin: 0;
+  padding: 0 56px;
+  background-color: #60BCE3;
+}
+
+#page {
+	
+	display: grid;
+	width: 1440px;
+	height :800px;
+	z-index: 10;
+	
+	grid-template-areas: 
+						 "left   head"
+						 "left   main"
+						 "left   main";
+						 
+	grid-template-rows: 80px 1fr;
+	grid-template-columns: 384px 1fr;
+}
+
+#page > left {
+		grid-area: left;
+		// text-align: center;
+	  
+	  }
+	  #page > head {
+		grid-area: head;
+		
+	  
+	  }
+	  
+	 
+	  
+	  #page > main {
+		grid-area: main;
+		max-width: 1056px;
+  		width: 100%;
+ 		margin: 0;
+  		padding: 0 56px;
+		height: 721px;  
+		/* background-color: #ffff64; */
+	  }
+
+
+
+
+

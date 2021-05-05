@@ -1,0 +1,325 @@
+@import 'vars';
+@import 'reset';
+@import 'global';
+
+.left{
+    display: grid;
+    &__header{
+        position: relative;
+        width: 384px;
+        height: 80px;
+        background: #8BD1EF;
+    }
+    &__img2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 34.89%;
+        bottom: 41.55%;
+        left: 47.76%;
+        background:transparent;
+    }
+    &__img3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 28.75%;
+        bottom: 28.75%;
+        left: 42.71%;
+        background: transparent;
+    }
+
+    /* Rectangle 6 */
+
+   background: #8BD1EF; 
+}
+
+.frame{
+    height: 96px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    background: #F8FCFF;
+    &__caption{
+        padding-top: 16px;
+        @extend %title-h2;
+        margin-bottom: 4px;
+    }
+    &__inner{
+        padding-top: 4px;
+        display: flex;   
+    }
+    &__text{
+       margin-right: 8px;
+        
+    }
+    &__text--link{
+        cursor: pointer;
+        color: #60BCE3;
+    }
+}
+
+.left-content{
+    
+    height: 624px;
+    background: #FFFFFF;
+}
+
+.menu-content{
+    padding: 17px 0px;
+    &__list-head{
+        @extend %title-h4;
+        display: flex;
+        justify-content: space-left;
+    }
+    &__list-img{
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 8px;
+        } 
+    &__list-head-caption{
+            padding-right: 166px;
+            padding-bottom: 8px;
+            
+            // width: 76px;
+    }
+    
+    &__text-link{
+        
+        cursor: pointer;
+        color: #60BCE3;
+        text-align: left;
+        
+        padding-left: 24px;
+        padding-right: 118px;
+    }
+    &__item{
+        padding-top: 10px;
+        padding-bottom: 12px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:start;
+        // position: absolute;
+        // &::after{
+        //     content: "";
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     background: #ccc;
+        //     height: 2px;
+        //     width: 385px;
+        // }
+    }
+        
+    &__list{
+        display: flex;
+        color: #8D8D8E;
+        font-size: 14px;
+        line-height: 20px; 
+    }
+    
+    &__list-caption{
+        padding-left: 24px;
+        padding-bottom: 8px;
+        margin-right: 24px;
+        width: 76px;
+    }
+    &__list-text{
+        padding-left: 160px;
+    }
+    &__list-search{
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 12px;
+        border-top: solid 1px;
+       
+        border-color: #ccc;
+        
+    }
+    &__list-plan{
+            display: flex;
+            width: 30px;
+            margin-left: 16px;
+            margin-right: 20px;
+            padding-bottom: 12px;
+            border-bottom: solid 2px;
+            border-color: #ccc;
+            mask-image: url('../images/flag.svg');
+            mask-repeat: no-repeat;
+            background-color: #60BCE3;;
+        // position: absolute;
+        // &::after{
+        //     content: "";
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     background: #ccc;
+        //     height: 2px;
+        //     width: 385px;
+        // }
+    }
+}
+
+  
+
+.header {
+   &__inner{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    }
+}
+   
+.menu{
+    &__list{
+    display: flex;
+    margin-top: 28px;
+    }
+    &__list-item{
+        display: flex;
+    }
+    &__img {
+        padding-right: 18px;
+    }
+    &__text{
+        color: #FFFFFF;
+        margin-right: 6px;
+    }
+}
+.first{
+    /* first */
+
+
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__title{
+        margin-top: 48px;
+        margin-bottom: 24px;
+        @extend %title-h1;
+    }
+}
+.payment-cards{
+    width: 944px;
+    height: 186px;
+    margin-bottom: 12px;
+    background: #FFFFFF;
+    /* bg shadow */
+    
+    box-shadow: 0px 70px 100px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+
+    &__title{
+        padding-top: 21px;
+        padding-left: 24px;
+        @extend %title-h3;
+    }
+    &__text{
+        padding-top: 21px;
+        padding-bottom: 12px;
+        padding-left: 657px;
+        color: rgba(96, 188, 227, 1)
+    }
+    &__inner{
+        width: 100%;
+        display: flex;
+    }
+}    
+.block{
+        padding-top: 4px;
+        padding-bottom: 12px; 
+    &__caption{
+        padding-left: 24px;
+    }  
+    &__text{
+        color: rgba(96, 188, 227, 1);
+        padding-left: 20px;
+    }  
+    &__inner{
+        width: 100%;
+        display: flex;
+    }
+    &__text--cancel{
+        padding-left: 20px;
+        color: rgba(228, 146, 146, 1);
+
+    }
+    &__edit-plan{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: #D6E2F1;
+        height: 24px;
+        margin-left: 567px;
+        top: 0px;
+        font-style: normal;
+        font-weight: normal;
+        border-radius: 0px;
+        border: transparent;
+    }
+}
+
+.slp-cards{
+    width: 944px;
+    height: 72px;
+    background: #FFFFFF;
+    /* bg shadow */
+    
+    box-shadow: 0px 70px 100px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: row;
+
+    &__title{
+        padding-top: 21px;
+        padding-left: 24px;
+        @extend %title-h4;
+    }
+    &__text{
+        
+        padding-top: 21px;
+        padding-bottom: 12px;
+        padding-left: 500px;
+        margin-right: 50px;
+        color: rgba(96, 188, 227, 1)
+    }
+    &__inner{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button{
+        /* Color/lightblue */
+        color: #FFF;
+        margin-top: 12px;
+        margin-right: 24px;
+        background: #60BCE3;
+        border-radius: 5px;
+        height: 48px;
+        width: 220px;
+        border: 0;
+
+
+    }
+}    
+
+
+
+
+
+
+
+   
+    
+    
+
